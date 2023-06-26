@@ -8,12 +8,24 @@
     <title>Online Store</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/app.css">
+    
     <title>Tienda</title>
 </head>
 <body>
     <header>
         <h1 class="nombre-sitio">Tienda de <span>Muebles</span></h1>
     </header>
+    <div
+        class="barra contenedor">
+        <form action="" class="buscador"
+            style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;padding: 10px;  ">
+            <input type="text" placeholder="Ingresa tu busqueda" 
+                style="width: 100%; height: 100%; border: 1px solid #e1e1e1; border-radius: 5px; padding: 10px; font-size: 16px;" >
+            <input type="submit" value="Buscar"
+                style="width: 100px; height: 100%; border: none; border-radius: 5px; background-color: #DA552F; color: #FFF; font-size: 16px; font-weight: bold; cursor: pointer; margin-left: 10px;" >
+        </form>
+
+    </div>
     <div class="contenedor-navegacion">
         <nav class="navegacion-principal contenedor">
             <a href="index.html">Inicio</a>
@@ -37,12 +49,18 @@
             <!--Producto-->
             <div class="producto">
                 <img src="./src/img/producto1.jpg" alt="producto1">
-                <div class="texto-producto">
-                    <h3>Producto</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus necessitatibus cum, obcaecati
-                        numquam laborum nobis esse dignissimos! </p>
+                <div class="texto-producto" >
+                    <h3>Mesa para recibidor</h3>
+                    <ul style="text-align: start;">
+                        <li>Mesa para recibidor de madera de roble con cajones color chocolate. 
+                        </li> 
+                        <li>  Con cuatro patas de madera.</li>
+                     <li>   Cajones grandes de almacenamiento en rieles de metal con elegantes asas de metal negro
+                        Marco de metal negro resistente
+                    </li>
+                    </ul>
                     <p class="precio">Precio $1000.00</p>
-                    <a class="btn" href="#">Agregar al carrito</a>
+                 
                 </div>
             </div>
             <!--Producto-->
@@ -50,10 +68,15 @@
             <div class="producto">
                 <img src="./src/img/producto2.jpg" alt="producto2">
                 <div class="texto-producto">
-                    <h3>Producto</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                    <p class="precio">Precio $1000.00</p>
-                    <a class="btn" href="#">Agregar al carrito</a>
+                    <h3>Sala</h3>
+                <ul style="text-align: start;">
+                        <li>Bonita sala de 3 piezas con cojines incluidos y tapete de regalo en la compra de esta sala.    </li>
+
+                </ul>
+                        
+                    </p>
+                    <p class="precio">Precio $25000.00</p>
+                 
                 </div>
             </div>
             <!--Producto-->
@@ -61,10 +84,13 @@
             <div class="producto">
                 <img src="./src/img/producto3.jpg" alt="producto3">
                 <div class="texto-producto">
-                    <h3>Producto</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                    <p class="precio">Precio $1000.00</p>
-                    <a class="btn" href="#">Agregar al carrito</a>
+                    <h3>Sillon</h3>
+                    <ul style="text-align: start;">
+                        <li>Sillon en color gris y con cojines incluidos sillin hecho con la mas alta calidad</li>
+                    </ul>
+                    
+                    <p class="precio">Precio $18000.00</p>
+                 
                 </div>
             </div>
             <!--Producto-->
@@ -72,10 +98,18 @@
             <div class="producto">
                 <img src="./src/img/producto4.jpg" alt="producto4">
                 <div class="texto-producto">
-                    <h3>Producto</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit </p>
-                    <p class="precio">Precio $1000.00</p>
-                    <a class="btn" href="#">Agregar al carrito</a>
+                    <h3>Antecomedor</h3>
+                    <ul
+                        style="text-align: start;"
+                    >
+                        <li>Antecomedor de 4 sillas con mesa de madera de roble y sillas de madera de roble en color negro.</li>
+                        <li>Con cuatro patas de madera.</li>
+                        <li>Mesa con textura de marmol</li>
+                      
+                    </ul>
+
+                    <p class="precio">Precio $10500.00</p>
+                 
                 </div>
             </div>
             <!--Producto-->
@@ -83,10 +117,17 @@
             <div class="producto">
                 <img src="./src/img/producto5.jpg" alt="producto5">
                 <div class="texto-producto">
-                    <h3>Producto</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <p class="precio">Precio $1000.00</p>
-                    <a class="btn" href="#">Agregar al carrito</a>
+                    <h3>Recamara Matrimonial</h3>
+                    <ul style="text-align: start;">
+                        <li>Recamara de 3 piezas con cajones incluidos y espejo de regalo en la compra de esta recamara.    </li>
+                        <li>  Con cuatro patas de madera.</li>
+                        <li>Sabanas egipcias</li>
+                        <li>Almohadas de plumas</li>
+                        <li>Colchon de la mas alta calidad</li>
+                    </ul>
+
+                    <p class="precio">Precio $19000.00</p>
+                 
                 </div>
             </div>
             <!--Producto-->
@@ -94,10 +135,17 @@
             <div class="producto">
                 <img src="./src/img/producto6.jpg" alt="producto6">
                 <div class="texto-producto">
-                    <h3>Producto</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <p class="precio">Precio $1000.00</p>
-                    <a class="btn" href="#">Agregar al carrito</a>
+                    <h3>Recamara Individual</h3>
+                        <ul style="text-align: start;">
+                            <li>
+                                Recamara de 3 piezas con cajones incluidos y espejo de regalo en la compra de esta recamara.    </li>
+                            </li>
+                            <li>Incluye base para colchon</li>
+                            <li>Sabanas egipcias</li>
+                            <li>Burros de madera de roble</li>
+                        </ul>
+                    <p class="precio">Precio $25000.00</p>
+                 
                 </div>
             </div>
             <!--Producto-->

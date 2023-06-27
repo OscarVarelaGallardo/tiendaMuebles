@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/app.css">
     <script src="https://kit.fontawesome.com/667f60164e.js" crossorigin="anonymous"></script>
 
-    <title>Entrada Blog </title>
+    <title>Online Store</title>
 
 </head>
 
@@ -17,14 +17,22 @@
     <header>
         <h1 class="nombre-sitio">Tienda de <span>Muebles</span></h1>
     </header>
-    <div
-        class="barra contenedor">
+
+
+
+    <div class="barra contenedor">
         <form action="" class="buscador"
-            style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;padding: 10px;  ">
-            <input type="text" placeholder="Buscar" 
-                style="width: 100%; height: 100%; border: 1px solid #e1e1e1; border-radius: 5px; padding: 10px; font-size: 16px;" >
+            style="display: flex; justify-content: center; align-items: center; width: 90%; height: 100%;padding: 10px;  ">
+
+
+            <input type="text" placeholder="Buscar"
+                style="width: 100%; height: 100%; border: 1px solid #e1e1e1; border-radius: 5px; padding: 10px; font-size: 16px;">
+            <i class="fas fa-search" style="margin-left: -30px; color: #DA552F;"></i>
+
+
+
             <input type="submit" value="Buscar"
-                style="width: 100px; height: 100%; border: none; border-radius: 5px; background-color: #DA552F; color: #FFF; font-size: 16px; font-weight: bold; cursor: pointer; margin-left: 10px;" >
+                style="width: 100px; height: 100%; border: none; border-radius: 5px; padding: 10px; background-color: #DA552F; color: #FFF; font-size: 16px; font-weight: bold; cursor: pointer; margin-left: 30px;">
         </form>
 
     </div>
@@ -53,61 +61,20 @@
                 Contacto</a>
         </nav>
     </div>
-
-
-
-    <main class="contenido-principal contenedor">
-        <h2 class="text-center">Galeria</h2>
-        <ul class="galeria">
-            <li>
-                <a href="./src/img/galeria_01.jpg">
-                    <img  src="./src/img/galeria_01.jpg" alt="imagen gelria">
-                </a>
-            </li>
-            <li>
-                <a href="./src/img/galeria_02.jpg">
-                    <img src="./src/img/galeria_02.jpg" alt="imagen gelria">
-                </a>
-            </li>
-            <li>
-                <a href="./src/img/galeria_03.jpg">
-                    <img src="./src/img/galeria_03.jpg" alt="imagen gelria">
-                </a>
-            </li>
-            <li>
-                <a href="./src/img/galeria_04.jpg">
-                    <img src="./src/img/galeria_04.jpg" alt="imagen gelria">
-                </a>
-            </li>
-            <li>
-                <a href="./src/img/galeria_05.jpg">
-                    <img src="./src/img/galeria_05.jpg" alt="imagen gelria">
-                </a>
-            </li>
-            <li>
-                <a href="./src/img/galeria_06.jpg">
-                    <img src="./src/img/galeria_06.jpg" alt="imagen gelria">
-                </a>
-            </li>
-            <li>
-                <a href="./src/img/galeria_07.jpg">
-                    <img src="./src/img/galeria_07.jpg" alt="imagen gelria">
-                </a>
-            </li>
-            <li>
-                <a href="./src/img/galeria_08.jpg">
-                    <img src="./src/img/galeria_08.jpg" alt="imagen gelria">
-                </a>
-            </li>
-            <li>
-                <a href="./src/img/galeria_09.jpg">
-                    <img src="./src/img/galeria_09.jpg" alt="imagen gelria">
-                </a>
-            </li>
-
-        </ul>
-
-
+  
+    <main class="contenedor seccion contenido-centrado">
+        <div 
+            style="width: 100%; height: 100%; border: 1px solid #e1e1e1; border-radius: 5px; padding: 10px; font-size: 16px; display: flex; flex-direction: column; justify-content: center; align-items: center;"
+        >
+        <h1 class="fw-300 centrar-texto"   style="font-size: 50px; color: #DA552F; margin-top: 100px; margin-bottom: 50px;">Error 404</h1>
+       <img src="./src/img/page404NoFound.jpg" alt="404" style="width: 50%; height: 50%; margin-bottom: 50px;">
+        <p class="centrar-texto">
+            Lo sentimos, la pagina que buscas no existe.
+        </p>
+        <input type="button" value="Volver" 
+            style="width: 100px; height: 100%; border: none; border-radius: 5px; padding: 10px; background-color: #DA552F; color: #FFF; font-size: 16px; font-weight: bold; cursor: pointer; margin-left: 30px;"
+        onclick="history.back()" class="boton boton-verde">
+    </div>
     </main>
 
 
@@ -143,16 +110,14 @@
 
                 </nav>
             </div>
-
-
-
-
         </div>
+        <p class="contenedor  copyrigth">&copy; Todos los derechos Reservados Tienda de Muebles
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+        </p>
 
 
-        <p class="contenedor  copyrigth"   >&copy; Todos los derechos Reservados Tienda de Muebles    <script>
-            document.write(new Date().getFullYear());
-        </script></p>
     </footer>
 </body>
 

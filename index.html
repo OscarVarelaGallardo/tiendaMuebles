@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/app.css">
+    <script src="https://kit.fontawesome.com/667f60164e.js" crossorigin="anonymous"></script>
+
     <title>Online Store</title>
 
 </head>
@@ -15,35 +17,56 @@
     <header>
         <h1 class="nombre-sitio">Tienda de <span>Muebles</span></h1>
     </header>
-    
 
-   
-    <div
-        class="barra contenedor">
+
+
+    <div class="barra contenedor">
         <form action="" class="buscador"
-            style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;padding: 10px;  ">
-            <input type="text" placeholder="Buscar" 
-                style="width: 100%; height: 100%; border: 1px solid #e1e1e1; border-radius: 5px; padding: 10px; font-size: 16px;" >
+            onsubmit="event.preventDefault(); alert('No se ha implementado la busqueda');"
+            style="display: flex; justify-content: center; align-items: center; width: 90%; height: 100%;padding: 10px;  ">
+
+
+            <input type="text" placeholder="Buscar"
+                style="width: 100%; height: 100%; border: 1px solid #e1e1e1; border-radius: 5px; padding: 10px; font-size: 16px;">
+            <i class="fas fa-search" style="margin-left: -30px; color: #DA552F;"></i>
+
+
+
             <input type="submit" value="Buscar"
-                style="width: 100px; height: 100%; border: none; border-radius: 5px; background-color: #DA552F; color: #FFF; font-size: 16px; font-weight: bold; cursor: pointer; margin-left: 10px;" >
+                style="width: 100px; height: 100%; border: none; border-radius: 5px; padding: 10px; background-color: #DA552F; color: #FFF; font-size: 16px; font-weight: bold; cursor: pointer; margin-left: 30px;">
         </form>
 
     </div>
     <div class="contenedor-navegacion">
         <nav class="navegacion-principal contenedor">
-            <a href="index.html">Inicio</a>
-            <a href="nosotros.html">Nosotros</a>
-            <a href="tienda.html">Tienda</a>
-            <a href="blog.html">Blog</a>
-            <a href="galeria.html">Galeria</a>
-            <a href="contacto.html">Contacto</a>
+            <a href="index.html">
+                <i class="fas fa-home"></i>
+                Inicio
+                  
+
+            </a>
+            <a href="nosotros.html">
+                <i class="fas fa-users"></i>
+                Nosotros</a>
+            <a href="tienda.html">
+                <i class="fas fa-store"></i>
+                Tienda</a>
+            <a href="blog.html">
+                <i class="fas fa-blog"></i>
+                Blog</a>
+            <a href="galeria.html">
+                <i class="fas fa-images"></i>
+                Galeria</a>
+            <a href="contacto.html">
+                <i class="fas fa-phone"></i>
+                Contacto</a>
         </nav>
     </div>
     <div class="hero">
 
     </div>
     <section class="contenedor categorias">
-        <h2 >Categoria de <span> Productos</span></h2>
+        <h2>Categoria de <span> Productos</span></h2>
         <div class="listado-categorias">
             <div class="categoria">
                 <img src="./src/img/categoria1.jpg" alt="categoria1">
@@ -62,14 +85,18 @@
     </section>
 
     <section class="sobre-nosotros">
-            <div class="contenedor">
-                <div class="sobre-nosotros-grid">
+        <div class="contenedor">
+            <div class="sobre-nosotros-grid">
                 <div class="texto-nosotros">
                     <h2>Sobre nosotros</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum aspernatur dolorem dolore,
-                        reprehenderit consectetur adipisci officiis, saepe nobis odio, libero nemo deleniti
-                        necessitatibus
-                        tempora nulla similique odit et veritatis. Quibusdam!</p>
+                    <p>
+                        Somos una empresa dedicada a la venta de muebles para el hogar y la oficina, con más de 10 años de experiencia en el mercado.
+                      
+
+                    </p>
+                    <p>
+                        Comprobamos que nuestros productos son de la mejor calidad y al mejor precio.
+                    </p>
                 </div>
             </div>
         </div>
@@ -84,11 +111,12 @@
             <div class="producto">
                 <img src="./src/img/producto1.jpg" alt="producto1">
                 <div class="texto-producto">
-                    <h3>Producto</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus necessitatibus cum, obcaecati
-                        numquam laborum nobis esse dignissimos! </p>
-                    <p class="precio">Precio $1000.00</p>
-                    <a  class="btn" href="#">Ver más</a>
+                    <h3>Mesa para antecomedor</h3>
+                    <p>Excelete mesa para tu hogar, con un diseño moderno y elegante.
+
+                    </p>
+                    <p class="precio">Precio $5000.00</p>
+                    <a class="btn" href="#">Ver más</a>
                 </div>
             </div>
             <!--Producto-->
@@ -96,9 +124,11 @@
             <div class="producto">
                 <img src="./src/img/producto2.jpg" alt="producto2">
                 <div class="texto-producto">
-                    <h3>Producto</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                    <p class="precio">Precio $1000.00</p>
+                    <h3>Sala con cojines</h3>
+                    <p>Disfruta de tus hijos y familia en un lugar especial para ellos.
+
+                    </p>
+                    <p class="precio">Precio $15000.00</p>
                     <a class="btn" href="#">Ver más</a>
                 </div>
             </div>
@@ -106,9 +136,9 @@
             <!--Producto-->
             <div class="producto">
                 <img src="./src/img/producto3.jpg" alt="producto3">
-                <div class="texto-producto" >
-                    <h3>Producto</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  </p>
+                <div class="texto-producto">
+                    <h3>Sillon</h3>
+                    <p>Los sillones más comodos los encontras con nosotros. </p>
                     <p class="precio">Precio $1000.00</p>
                     <a class="btn" href="#">Ver más</a>
                 </div>
@@ -117,21 +147,26 @@
             <!--Producto-->
             <div class="producto">
                 <img src="./src/img/producto4.jpg" alt="producto4">
-                <div class="texto-producto" >
-                    <h3>Producto</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit </p>
-                    <p class="precio">Precio $1000.00</p>
-                    <a class="btn" href="#">Ver más</a>
+                <div class="texto-producto">
+                    <h3>Juego de mesa con sillas</h3>
+                    <p>
+                       Para ese lugar especial de tu hogar, con un diseño moderno y elegante.
+                    </p>
+                    <p class="precio">Precio $12000.00</p>
+                    <a class="btn" href="#">Ver más
+                        
+
+                    </a>
                 </div>
             </div>
             <!--Producto-->
             <!--Producto-->
             <div class="producto">
                 <img src="./src/img/producto5.jpg" alt="producto5">
-                <div class="texto-producto" >
-                    <h3>Producto</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <p class="precio">Precio $1000.00</p>
+                <div class="texto-producto">
+                    <h3>Recamara para los reyes de la casa</h3>
+                    <p>Hecha de los mejores materiales del mercado, el descanso que merecen tu y tu pareja</p>
+                    <p class="precio">Precio $20000.00</p>
                     <a class="btn" href="#">Ver más</a>
                 </div>
             </div>
@@ -140,8 +175,10 @@
             <div class="producto">
                 <img src="./src/img/producto6.jpg" alt="producto6">
                 <div class="texto-producto">
-                    <h3>Producto</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h3>Recamara individual completa</h3>
+                    <p>
+                        Cansado de no descansar en tu cama, tenemos la solucion para ti, recamara individual completa.
+                        </p>
                     <p class="precio">Precio $1000.00</p>
                     <a class="btn" href="#">Ver más</a>
                 </div>
@@ -154,42 +191,44 @@
 
 
     <footer class="site-footer">
-        <div class="contenedor grid-footer"  >
-        <div >
-            <h3>Categorias</h3>
-            <nav class="nav-footer">
-                <a href="">Cocina</a>
-                <a href="">Oficina</a>
-                <a href="">Jardin</a>
-                <a href="">Cochera</a>
-                <a href="">Dormitorios</a>
-            </nav>
-        </div>
-        <div >
-            <h3>Sobre nosotros</h3>
-            <nav class="nav-footer">
-                <a href="">Nuestra historia</a>
-                <a href="">Valores</a>
-                <a href="">Vision</a>
-                <a href="">Carreras</a>
-                <a href="">Politicas de Privacidad</a>
-                <a href="">Terminos del servicio</a>
-            </nav>
-        </div>
-        <div >
-            <h3>Soporte</h3>
-            <nav class="nav-footer">
-                <a href="">Preguntas Frecuentes</a>
-                <a href="">Ayuda en linea</a>
-                <a href="">Seguridad</a>
+        <div class="contenedor grid-footer">
+            <div>
+                <h3>Categorias</h3>
+                <nav class="nav-footer">
+                    <a href="error.html">Cocina</a>
+                    <a href="error.html">Oficina</a>
+                    <a href="error.html">Jardin</a>
+                    <a href="error.html">Cochera</a>
+                    <a href="">Dormitorios</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Sobre nosotros</h3>
+                <nav class="nav-footer">
+                    <a href="error.html">Nuestra historia</a>
+                    <a href="error.html">Valores</a>
+                    <a href="error.html">Vision</a>
+                    <a href="error.html">Carreras</a>
+                    <a href="error.html">Politicas de Privacidad</a>
+                    <a href="error.html">Terminos del servicio</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Soporte</h3>
+                <nav class="nav-footer">
+                    <a href="error.html">Preguntas Frecuentes</a>
+                    <a href="documentacion.html">Ayuda en linea</a>
+                    <a href="error.html">Seguridad</a>
 
-            </nav>
+                </nav>
+            </div>
         </div>
-        </div>
-        <p class="contenedor  copyrigth"   >&copy; Todos los derechos Reservados Tienda de Muebles    <script>
-            document.write(new Date().getFullYear());
-        </script></p>
-      
+        <p class="contenedor  copyrigth">&copy; Todos los derechos Reservados Tienda de Muebles
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+        </p>
+
 
     </footer>
 </body>

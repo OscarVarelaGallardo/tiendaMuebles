@@ -7,10 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/app.css">
+    <script src="https://kit.fontawesome.com/667f60164e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./src/helpers/helpers.js"></script>
     <title>Online Store</title>
 
 </head>
+<script>
+    const validateForm = (event) => {
+        event.preventDefault();
+        const correo = document.getElementById('correo').value;
+        const mensaje = document.getElementById('mensaje').value;
+        if (correo === '' || mensaje === '') {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Todos los campos son obligatorios',
+            })
+            return;
+        }
+        Swal.fire({
+            icon: 'success',
+            title: 'Mensaje enviado',
+            text: 'Gracias por contactarnos seras redireccionado a la pagina de inicio',
+        })
+        document.getElementById('correo').value = '';
+        document.getElementById('mensaje').value = '';
+        // redireccionar a otra pagina
 
+            setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 3000);
+
+     
+    }
+
+
+</script>
 <body>
     <header>
         <h1 class="nombre-sitio">Tienda de <span>Muebles</span></h1>
@@ -28,29 +61,44 @@
     </div>
     <div class="contenedor-navegacion">
         <nav class="navegacion-principal contenedor">
-            <a href="index.html">Inicio</a>
-            <a href="nosotros.html">Nosotros</a>
-            <a href="tienda.html">Tienda</a>
-            <a href="blog.html">Blog</a>
-            <a href="galeria.html">Galeria</a>
-            <a href="contacto.html">Contacto</a>
+            <a href="index.html">
+                <i class="fas fa-home"></i>
+                Inicio
+                  
+
+            </a>
+            <a href="nosotros.html">
+                <i class="fas fa-users"></i>
+                Nosotros</a>
+            <a href="tienda.html">
+                <i class="fas fa-store"></i>
+                Tienda</a>
+            <a href="blog.html">
+                <i class="fas fa-blog"></i>
+                Blog</a>
+            <a href="galeria.html">
+                <i class="fas fa-images"></i>
+                Galeria</a>
+            <a href="contacto.html">
+                <i class="fas fa-phone"></i>
+                Contacto</a>
         </nav>
     </div>
 
     <main class="contenido-principal contenedor-formulario">
         <h2 class="text-center">Contacto</h2>
-        <h4
-            style="text-align: center; margin-top: 20px; margin-bottom: 20px; font-size: 1.5rem; font-weight: 400; color: #333;"
-        >
+        <h4 style="text-align: center; margin-top: 20px; margin-bottom: 20px; font-size: 1.5rem; font-weight: 400; color: #333;" >
             Llena el formulario de contacto y un asesor se pondra en contacto contigo a la brevedad
         </h4>
-        <form>
+        <form 
+            onsubmit="return validateForm(event)"
+            >
             <div class="campo">
 
                 <label for="correo" class="contacto-formulario">Correo electronico</label>
-                <input id="correo" type="email" style="max-width: 40rem; border-radius: 5px;">
+                <input id="correo" type="email" style="max-width: 90rem; ">
                 <label for="mensaje"class="contacto-formulario">Mensaje</label>
-                <textarea name="mensaje" id="" maxcols="30" rows="10" style="max-width: 70rem; max-height: 40rem;border-radius: 10px; ">
+                <textarea  id="mensaje" maxcols="30" rows="10" style="max-width: 70rem; max-height: 40rem;  ">
                
 
            </textarea>
@@ -96,7 +144,7 @@
 
                 </nav>
             </div>
-
+            
 
 
 
@@ -106,6 +154,7 @@
             document.write(new Date().getFullYear());
         </script></p>
     </footer>
+    
 </body>
 
 </html>

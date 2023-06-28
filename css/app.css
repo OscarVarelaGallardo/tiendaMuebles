@@ -124,6 +124,8 @@ img {
     background-size: cover;
     background-position: center center;
     height: 55rem;
+    margin-top: 3em;
+    
 
 
 }
@@ -141,12 +143,14 @@ img {
     grid-template-columns: repeat(3, 1fr);
     height: 30rem;
     gap: 2rem;
+    margin-top: 10rem;
 
 
 }
 
 .categorias {
-    padding-top: 1rem;
+   
+    margin-top: 10rem;
 }
 
 .categorias h2 {
@@ -169,13 +173,15 @@ img {
 
 /** Sobre nosotros **/
 .sobre-nosotros {
-    background-image: linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0 100%),
+    background-image: linear-gradient(to right, transparent 50%, white 50%, white 100%),
         url('../src/img/nosotros.jpg');
     background-position: left center;
     padding: 1rem 0;
     background-repeat: no-repeat;
     background-size: 100%, 120rem;
-    margin-top: 5rem;
+    margin-top: 20rem;
+
+    
 }
 
 .sobre-nosotros-grid {
@@ -187,7 +193,7 @@ img {
 .texto-nosotros {
     flex-basis: 50%;
     padding: 3rem;
-    color: white;
+    color: black;
 
 }
 
@@ -195,17 +201,17 @@ img {
 
 .contenido-principal {
     padding-top: 2rem;
-
+    margin-top: 10rem;
 
 }
 
 .producto {
-    background-color: #037bc0;
+    margin-top: 10rem;
 }
 
 .texto-producto {
     text-align: center;
-    color: #ffff;
+    color: black;
     padding: 1rem;
 }
 

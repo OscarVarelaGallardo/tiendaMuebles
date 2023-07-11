@@ -272,14 +272,14 @@ img {
 
 .site-footer {
     border-top: 1px solid #e1e1e1;
-    margin-top: 5rem;
+    margin-top: 30rem;
     padding-top: 5rem;
 
 }
 
 .grid-footer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2fr;
   
 
@@ -385,5 +385,53 @@ article h2 {
 
 .contacto-formulario {
     font-weight: 700;
+
+}
+
+.img-galeria{
+    height: 40rem;
+    width: 40rem;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-galeria:hover{
+   
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    
+}
+
+.radio{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+    
+    
+    
+
+}
+
+.radio_label{
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;  
+    background-color: black;  
+    border-radius: 1rem;
+    margin-left: 1rem;
+
+}
+.radio_label:hover{
+    background-color: #037bc0;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;  
+}
+.radio_input{
+    display: none;
 
 }

@@ -19,20 +19,19 @@
     </header>
    
     <div class="barra contenedor">
-        <form action="" class="buscador"
-            onsubmit="event.preventDefault(); alert('No se ha implementado la busqueda');"
-            style="display: flex; justify-content: center; align-items: center; width: 90%; height: 100%;padding: 10px;  ">
-
-
-            <input type="text" placeholder="Buscar"
+        <div style="display: flex;flex-direction: row;  margin: 30px;">
+        
+            <input type="text" placeholder="Buscar...." id="inputBuscar" name="buscador"
                 style="width: 100%; height: 100%; border: 1px solid #e1e1e1; border-radius: 5px; padding: 10px; font-size: 16px;">
-            <i class="fas fa-search" style="margin-left: -30px; color: #DA552F;"></i>
-
-
-
-            <input type="submit" value="Buscar"
-                style="width: 100px; height: 100%; border: none; border-radius: 5px; padding: 10px; background-color: #DA552F; color: #FFF; font-size: 16px; font-weight: bold; cursor: pointer; margin-left: 30px;">
-        </form>
+        
+        
+            <button type="submit" value="Buscar" id="btnBuscar"
+                style="width: 140px; height: 100%; border: none; border-radius: 5px; padding: 10px; background-color: #DA552F; color: #FFF; font-size: 16px; font-weight: bold; cursor: pointer; margin-left: 30px;">
+        
+                <i class="fas fa-search" style="color: #ffff;"></i>
+            </button>
+        
+        </div>
 
     </div>
     <div class="contenedor-navegacion">
@@ -68,47 +67,60 @@
         <ul class="galeria">
             <li>
                 <a href="./src/img/galeria_01.jpg">
-                    <img  src="./src/img/galeria_01.jpg" alt="imagen gelria">
+                    <img  class="img-galeria"
+                    src="./src/img/galeria_01.jpg" alt="imagen galeria0">
                 </a>
             </li>
             <li>
                 <a href="./src/img/galeria_02.jpg">
-                    <img src="./src/img/galeria_02.jpg" alt="imagen gelria">
+                    <img class="img-galeria" src="./src/img/galeria_02.jpg" alt="imagen galeria1">
                 </a>
             </li>
             <li>
                 <a href="./src/img/galeria_03.jpg">
-                    <img src="./src/img/galeria_03.jpg" alt="imagen gelria">
+                    <img class="img-galeria"
+                    src="./src/img/galeria_03.jpg" alt="imagen galeria2">
                 </a>
             </li>
             <li>
                 <a href="./src/img/galeria_04.jpg">
-                    <img src="./src/img/galeria_04.jpg" alt="imagen gelria">
+                    <img 
+                    class="img-galeria"
+                    src="./src/img/galeria_04.jpg" alt="imagen galeria3">
                 </a>
             </li>
             <li>
                 <a href="./src/img/galeria_05.jpg">
-                    <img src="./src/img/galeria_05.jpg" alt="imagen gelria">
+                    <img
+                          class="img-galeria"
+                    src="./src/img/galeria_05.jpg" alt="imagen galeria4">
                 </a>
             </li>
             <li>
                 <a href="./src/img/galeria_06.jpg">
-                    <img src="./src/img/galeria_06.jpg" alt="imagen gelria">
+                    <img 
+                          class="img-galeria"
+                    src="./src/img/galeria_06.jpg" alt="imagen galeria5">
                 </a>
             </li>
             <li>
                 <a href="./src/img/galeria_07.jpg">
-                    <img src="./src/img/galeria_07.jpg" alt="imagen gelria">
+                    <img 
+                          class="img-galeria"
+                    src="./src/img/galeria_07.jpg" alt="imagen galeria6">
                 </a>
             </li>
             <li>
                 <a href="./src/img/galeria_08.jpg">
-                    <img src="./src/img/galeria_08.jpg" alt="imagen gelria">
+                    <img   class="img-galeria"
+                    src="./src/img/galeria_08.jpg" alt="imagen galeria7">
                 </a>
             </li>
             <li>
                 <a href="./src/img/galeria_09.jpg">
-                    <img src="./src/img/galeria_09.jpg" alt="imagen gelria">
+                    <img 
+                          class="img-galeria"
+                    src="./src/img/galeria_09.jpg" alt="imagen galeria8">
                 </a>
             </li>
 
@@ -120,6 +132,7 @@
 
     <footer class="site-footer">
         <div class="contenedor grid-footer">
+            <h2>Contacto</h2>
             <div>
                 <h3>Categorias</h3>
                 <nav class="nav-footer">

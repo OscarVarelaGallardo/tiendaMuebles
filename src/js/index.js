@@ -36,7 +36,7 @@ buscador.addEventListener('click', () => {
         case navigation[1].name:
             window.scroll(
                 {
-                    top: 1500,
+                    top: 1650,
                     left: 0,
                     behavior: 'smooth'
                 })
@@ -60,7 +60,7 @@ buscador.addEventListener('click', () => {
         case navigation[4].name:
             window.scroll(
                 {
-                    top: 4000,
+                    top: 4500,
                     left: 0,
                     behavior: 'smooth'
                 })
@@ -128,3 +128,33 @@ btnChecked2.addEventListener('click', () => {
     }
 }
 );
+
+    const validateForm = (event) => {
+        event.preventDefault();
+    const correo = document.getElementById('correo').value;
+    const mensaje = document.getElementById('mensaje').value;
+    if (correo === '' || mensaje === '') {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Todos los campos son obligatorios',
+        })
+            return;
+        }
+    Swal.fire({
+        icon: 'success',
+    title: 'Mensaje enviado',
+    text: 'Gracias por contactarnos seras redireccionado a la pagina de inicio',
+        })
+    document.getElementById('correo').value = '';
+    document.getElementById('mensaje').value = '';
+        // redireccionar a otra pagina
+
+            setTimeout(() => {
+        window.location.href = 'index.html';
+            }, 3000);
+
+     
+    }
+
+

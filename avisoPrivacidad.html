@@ -8,9 +8,7 @@
         <link rel="icon" type="image/svg+xml" href="./src/img/shop-icon_34368.png" />
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/app.css">
-    <script src="https://kit.fontawesome.com/667f60164e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
- 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Tienda de Muebles</title>
 
@@ -18,38 +16,36 @@
 
 <body id="body">
     <div class="radio">
-    <input class="radio_input" type="radio" value="option1" name="radio" id="option1" checked>
-    <label class="radio_label" for="option1">Aa+</label>
-    <input class="radio_input" type="radio" value="option2" name="radio" id="option2" checked>
-    <label class="radio_label" for="option2">Aa-</label>
-</div>
-    
+        <input class="radio_input" type="radio" value="option1" name="radio" id="option1" checked>
+        <label class="radio_label" for="option1">Aa+</label>
+        <input class="radio_input" type="radio" value="option2" name="radio" id="option2" checked>
+        <label class="radio_label" for="option2">Aa-</label>
+    </div>
+
     <header>
         <h1 class="nombre-sitio">Tienda de <span>Muebles</span></h1>
     </header>
-   
+
     <div class="barra contenedor">
         <div style="display: flex;flex-direction: row;  margin: 30px;">
-        
+
             <input type="text" placeholder="Buscar...." id="inputBuscar" name="buscador"
                 style="width: 100%; height: 100%; border: 1px solid #e1e1e1; border-radius: 5px; padding: 10px; font-size: 16px;">
-        
-        
             <button type="submit" value="Buscar" id="btnBuscar"
                 style="width: 140px; height: 100%; border: none; border-radius: 5px; padding: 10px; background-color: #DA552F; color: #FFF; font-size: 16px; font-weight: bold; cursor: pointer; margin-left: 30px;">
-        
                 <i class="fas fa-search" style="color: #ffff;"></i>
             </button>
-        
+
         </div>
+
 
     </div>
     <div class="contenedor-navegacion">
+
         <nav class="navegacion-principal contenedor">
             <a href="index.html">
                 <i class="fas fa-home"></i>
                 Inicio
-                  
 
             </a>
             <a href="nosotros.html">
@@ -67,84 +63,68 @@
             <a href="contacto.html">
                 <i class="fas fa-phone"></i>
                 Contacto</a>
+
         </nav>
     </div>
+    <div class="avisoPrivacidadTitulo">
+        <h2>Aviso de privacidad</h2>
+    </div>
 
-    <main class="contenido-principal contenedor-formulario">
-        <h2 class="text-center">Contacto</h2>
-        <h4 style="text-align: center; margin-top: 20px; margin-bottom: 20px; font-size: 1.5rem; font-weight: 400; color: #333;" >
-            Llena el formulario de contacto y un asesor se pondra en contacto contigo a la brevedad
-        </h4>
-        <form 
-            onsubmit="return validateForm(event)"
-            >
-            <div class="campo">
-
-                <label for="correo" class="contacto-formulario">Correo electronico</label>
-                <input id="correo" type="email" placeholder="correo@correo.com" style="max-width: 90rem; ">
-                <label for="mensaje"class="contacto-formulario">Mensaje</label>
-                <textarea  id="mensaje" maxcols="30" rows="10"  placeholder="Escribe tu mensaje aqui..."
-                style="max-width: 70rem; max-height: 40rem;resize: none; ">
-               
-
-           </textarea>
-            <button class="btn max-width-30 "
-            style="background-color: #DA552F; color: #FFF; font-size: 16px; font-weight: bold; 
-                cursor: pointer; margin-left: 10px; margin-top: 20px;
-                margin-bottom: 20px; border-radius: 10px; padding: 10px; "
-            
-            type="submit">Enviar</button>
-            </div>
-
-        </form>
 
     </main>
 
 
     <footer class="site-footer">
+
         <div class="contenedor grid-footer">
             <h2>Contacto</h2>
             <div>
+
                 <h3>Categorias</h3>
                 <nav class="nav-footer">
-                    <a href="">Cocina</a>
-                    <a href="">Oficina</a>
-                    <a href="">Jardin</a>
-                    <a href="">Cochera</a>
+                    <a href="error.html">
+
+                        Cocina</a>
+
+                    <a href="error.html">Oficina</a>
+                    <a href="error.html">Jardin</a>
+                    <a href="error.html">Cochera</a>
                     <a href="">Dormitorios</a>
                 </nav>
             </div>
             <div>
                 <h3>Sobre nosotros</h3>
                 <nav class="nav-footer">
-                    <a href="">Nuestra historia</a>
-                    <a href="">Valores</a>
-                    <a href="">Vision</a>
-                    <a href="">Carreras</a>
-                    <a href="">Politicas de Privacidad</a>
-                    <a href="">Terminos del servicio</a>
+                    <a href="error.html">Nuestra historia</a>
+                    <a href="error.html">Valores</a>
+                    <a href="error.html">Vision</a>
+                    <a href="error.html">Carreras</a>
+                    <a href="error.html">Politicas de Privacidad</a>
+                    <a href="error.html">Terminos del servicio</a>
+
                 </nav>
             </div>
             <div>
                 <h3>Soporte</h3>
                 <nav class="nav-footer">
-                    <a href="">Preguntas Frecuentes</a>
-                    <a href="">Ayuda en linea</a>
-                    <a href="">Seguridad</a>
+
+                    <a href="ayuda.html">Ayuda en linea</a>
+                    <a href="error.html">Seguridad</a>
 
                 </nav>
             </div>
-            
-
-
-
         </div>
+        <p class="contenedor  copyrigth">&copy; Todos los derechos Reservados Tienda de Muebles
+            <script>
+                document.write(new Date().getFullYear());
 
-        <p class="contenedor  copyrigth"   >&copy; Todos los derechos Reservados Tienda de Muebles    <script>
-            document.write(new Date().getFullYear());
-        </script></p>
+            </script>
+        </p>
+
+
     </footer>
-
 </body>
+<script src="https://kit.fontawesome.com/667f60164e.js" crossorigin="anonymous"></script>
 <script src="./src/js/index.js"></script>
+
 </html>

@@ -105,7 +105,7 @@ btnChecked2.addEventListener('click', () => {
     const checked = document.getElementById('option2').checked;
     if (checked) {
         const body= document.getElementById("body")
-        body.style.fontSize="17px"
+        body.style.fontSize="1.6rem"
 
         return 
         

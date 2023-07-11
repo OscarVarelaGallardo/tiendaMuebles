@@ -106,9 +106,7 @@ btnChecked2.addEventListener('click', () => {
     if (checked) {
         const body= document.getElementById("body")
         body.style.fontSize="1.6rem"
-
-        return 
-        
+        return    
     }
 }
 );

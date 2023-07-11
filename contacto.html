@@ -44,7 +44,14 @@
 
 
 </script>
-<body>
+<body id="body">
+    <div class="radio">
+    <input class="radio_input" type="radio" value="option1" name="radio" id="option1" checked>
+    <label class="radio_label" for="option1">Aa+</label>
+    <input class="radio_input" type="radio" value="option2" name="radio" id="option2" checked>
+    <label class="radio_label" for="option2">Aa-</label>
+</div>
+    
     <header>
         <h1 class="nombre-sitio">Tienda de <span>Muebles</span></h1>
     </header>
@@ -102,14 +109,18 @@
             <div class="campo">
 
                 <label for="correo" class="contacto-formulario">Correo electronico</label>
-                <input id="correo" type="email" style="max-width: 90rem; ">
+                <input id="correo" type="email" placeholder="correo@correo.com" style="max-width: 90rem; ">
                 <label for="mensaje"class="contacto-formulario">Mensaje</label>
-                <textarea  id="mensaje" maxcols="30" rows="10" style="max-width: 70rem; max-height: 40rem;  ">
+                <textarea  id="mensaje" maxcols="30" rows="10"  placeholder="Escribe tu mensaje aqui..."
+                style="max-width: 70rem; max-height: 40rem;resize: none; ">
                
 
            </textarea>
             <button class="btn max-width-30 "
-                style="background-color: #DA552F; color: #FFF; font-size: 16px; font-weight: bold; cursor: pointer; margin-left: 10px; margin-top: 20px; margin-bottom: 20px; border-radius: 10px; padding: 10px; "
+            style="background-color: #DA552F; color: #FFF; font-size: 16px; font-weight: bold; 
+                cursor: pointer; margin-left: 10px; margin-top: 20px;
+                margin-bottom: 20px; border-radius: 10px; padding: 10px; "
+            
             type="submit">Enviar</button>
             </div>
 
@@ -161,7 +172,7 @@
             document.write(new Date().getFullYear());
         </script></p>
     </footer>
-    
+    <script src="./index.js"></script>
 </body>
 
 </html>

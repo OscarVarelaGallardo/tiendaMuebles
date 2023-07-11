@@ -12,7 +12,14 @@ buscador.addEventListener('click', () => {
     const input = document.getElementById('inputBuscar').value.toLowerCase().trim().split(' ')[0];
 
     if (input.length == 0) {
-        alert('Ingrese un valor');
+        Swal.fire({
+            icon: 'warning',
+            title: '¡Ingrese una palabra!',
+            text: 'OPPS!'
+
+        })
+
+
         return;
     }
 
@@ -90,6 +97,12 @@ btnChecked.addEventListener('click', () => {
     if (checked) {
         const body= document.getElementById("body")
         body.style.fontSize="27px"
+        Swal.fire({
+            icon: 'success',
+            title: '¡Tamaño de letra cambiado!',
+            text: '¡Disfruta de la lectura!'
+
+        })
 
         return 
         
@@ -106,6 +119,11 @@ btnChecked2.addEventListener('click', () => {
     if (checked) {
         const body= document.getElementById("body")
         body.style.fontSize="1.6rem"
+        Swal.fire({
+            icon: 'success',
+            title: '¡Tamaño de letra cambiado!',
+            text: '¡Disfruta de la lectura!'
+        })
         return    
     }
 }
